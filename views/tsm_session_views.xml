@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_session_form" model="ir.ui.view">
+            <field name="name">tsm.session.form</field>
+            <field name="model">tsm.session</field>
+            <field name="arch" type="xml">
+                <form string="Form session">
+                    <header>
+                        <button name="load_playlist_button" string="Traer Playlist" type="object"/>
+                    </header>
+                    <sheet>
+                        <group col="2">
+                            <group>
+                                <field name="date" />
+                            </group>
+                            <group>
+                                <field name="playlist_id" />
+                            </group>
+
+                        <field name="session_items">
+                            <tree>
+                                <field name="obra"/>
+                                <field name="time"/>
+                                <field name="estudiado"/>
+                            </tree>
+                        </field>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_session_tree" model="ir.ui.view">
+            <field name="name">tsm.session.tree</field>
+            <field name="model">tsm.session</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="date" />
+                    <field name="playlist_id" />
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

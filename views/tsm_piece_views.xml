@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="tsm_piece_tree" model="ir.ui.view">
+            <field name="name">tsm.piece.tree</field>
+            <field name="model">tsm.piece</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="name" />
+                    <field name="author"/>
+                    <field name="duration" widget = "time_float"/>
+                    <field name="type"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tsm_piece,access_tsm_piece,model_tsm_piece,base.group_user,1,1,1,1
+access_tsm_music_author,access_tsm_music_author,model_tsm_music_author,base.group_user,1,1,1,1 
+access_tsm_session,access_tsm_session,model_tsm_session,base.group_user,1,1,1,1
+access_tsm_playlist,access_tsm_playlist,model_tsm_playlist,base.group_user,1,1,1,1
+access_tsm_playlist_line,access_tsm_playlist_line,model_tsm_playlist_line,base.group_user,1,1,1,1
+access_tsm_session_line,access_tsm_session_line,model_tsm_session_line,base.group_user,1,1,1,1
+access_tsm_type_piece_count_line,access_tsm_type_piece_count_line,model_tsm_type_piece_count_line,base.group_user,1,1,1,1
+access_tsm_type_piece_count,access_tsm_type_piece_count,model_tsm_type_piece_count,base.group_user,1,1,1,1 
+access_tsm_count_piecex_author_line,access_tsm_count_piecex_author_line,model_tsm_count_piecex_author_line,base.group_user,1,1,1,1
+access_tsm_count_piecex_author,access_tsm_count_piecex_author,model_tsm_count_piecex_author,base.group_user,1,1,1,1

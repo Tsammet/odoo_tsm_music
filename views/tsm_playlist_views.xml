@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_playlist_form" model="ir.ui.view">
+            <field name="name">tsm.playlist.form</field>
+            <field name="model">tsm.playlist</field>
+            <field name="arch" type="xml">
+                <form string="Playlist">
+                    <sheet>
+                            <group>
+                                <field name="name" />
+                            </group>
+
+                            <field name="playlist_line">   
+                                <tree editable='bottom'> 
+                                    <field name="obra"/>
+                                    <field name="time"/>
+                                </tree>
+                            
+                            </field>
+                            
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_playlist_tree" model="ir.ui.view">
+            <field name="name">tsm.playlist.tree</field>
+            <field name="model">tsm.playlist</field>
+            <field name="arch" type="xml">
+                <tree string="Playlist">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

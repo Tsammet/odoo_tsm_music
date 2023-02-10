@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_author_form" model="ir.ui.view">
+            <field name="name">tsm.music.author.form</field>
+            <field name="model">tsm.music.author</field>
+            <field name="arch" type="xml">
+                <form string="Model Description">
+                    <sheet>
+                        <group col = "2">
+                            <group>
+                                <field name="name" />
+                                <field name="country" />
+                            </group>
+                            <group>
+                                <field name="period"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_author_tree" model="ir.ui.view">
+            <field name="name">tsm.music.author.tree</field>
+            <field name="model">tsm.music.author</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="name" />
+                    <field name="country" />
+                    <field name="period" />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

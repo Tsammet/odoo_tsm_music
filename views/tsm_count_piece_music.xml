@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_type_piece_count_form" model="ir.ui.view">
+            <field name="name">tsm.type.piece.count.form</field>
+            <field name="model">tsm.type.piece.count</field>
+            <field name="arch" type="xml">
+                <form string="Contador Piezas">
+                    <header>
+                        <button name="count_genre_button" string="Contador Genero" type="object" />
+                    </header>
+                    <sheet>
+                        <field name="type_piece_count">
+                            <tree editable="button">
+                                <field name="type_piece" />
+                                <field name="qty" />
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_type_piece_count_tree" model="ir.ui.view">
+            <field name="name">tsm.type.piece.count.tree</field>
+            <field name="model">tsm.type.piece.count</field>
+            <field name="arch" type="xml">
+                <tree string="Contador Piezas">
+                    <field name="type_piece_count" />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_count_piecex_author_form" model="ir.ui.view">
+            <field name="name">tsm.count.piecex.author.form</field>
+            <field name="model">tsm.count.piecex.author</field>
+            <field name="arch" type="xml">
+                <form string="Model Description">
+                    <header>
+                        <button name="count_piece_author_button" string="Contador Obras" type="object"/>
+                    </header>
+                    <sheet>
+                            <field name="piecex_author_line" >
+                                <tree editable ="button">
+                                    <field name="author_music"/>
+                                    <field name="qty"/>
+                                </tree>
+                            </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_count_piecex_author_tree" model="ir.ui.view">
+            <field name="name">tsm.count.piecex.author.tree</field>
+            <field name="model">tsm.count.piecex.author</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="piecex_author_line" />
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

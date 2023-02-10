@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ <data>
+
+    <menuitem id="music_menu"  name="MÚSICA" sequence="5" web_icon="tsm_music,static/description/music_icon_tsm.png"/>
+
+
+
+    <menuitem id="master_menu" parent="music_menu" name="MASTER" sequence="5"/>
+    <menuitem id="session_menu" parent="music_menu" name="ESTUDIO" sequence="5"/>
+
+
+    <record id="piece_action" model="ir.actions.act_window">
+        <field name="name">PIECE</field>
+        <field name="res_model">tsm.piece</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="piece_menu" parent="master_menu" action="piece_action" name="Piece" sequence="5"/>
+      
+    <record id="music_author_action" model="ir.actions.act_window">
+        <field name="name">Author</field>
+        <field name="res_model">tsm.music.author</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="author_menu" parent="master_menu" action="music_author_action" name="Author" sequence="5"/>
+
+    <record id="music_author_action" model="ir.actions.act_window">
+        <field name="name">Author</field>
+        <field name="res_model">tsm.music.author</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="author_menu" parent="master_menu" action="music_author_action" name="Author" sequence="5"/>
+
+    <record id="tsm_session_action" model="ir.actions.act_window">
+        <field name="name">Sesión</field>
+        <field name="res_model">tsm.session</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="session_estudio_menu" parent="session_menu" action="tsm_session_action" name="Sesión" sequence="5"/>
+
+    <record id="tsm_playlist_action" model="ir.actions.act_window">
+        <field name="name">Playlist</field>
+        <field name="res_model">tsm.playlist</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="playlist_menu" parent="session_menu" action="tsm_playlist_action" name="Playlist" sequence="5"/>
+
+
+
+      <record id="tsm_count_type_piece_action" model="ir.actions.act_window">
+        <field name="name">Contador Genero</field>
+        <field name="res_model">tsm.type.piece.count</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="count_type_menu" parent="music_menu" action="tsm_count_type_piece_action" name="Contador" sequence="5"/>
+
+      <record id="tsm_count_piece_author_action" model="ir.actions.act_window">
+        <field name="name">Contador Obras</field>
+        <field name="res_model">tsm.count.piecex.author</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+      
+      <menuitem id="count_piece_menu" parent="music_menu" action="tsm_count_piece_author_action" name="Contador Obras" sequence="5"/>
+
+
+ </data>
+</odoo>
